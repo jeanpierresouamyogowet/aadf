@@ -1,0 +1,213 @@
+.h1 {
+    font-size: 70px;
+    color: rgb(255, 255, 255);
+}
+
+.image_h1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #005280;
+    padding: 5px 100px;
+}
+
+.image_h1 h1 {
+    font-size: 60px;
+    font-weight: 300;
+}
+
+.image_h1 img {
+    width: 40%;
+}
+
+.contact-container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.contact-description {
+    margin-top: 40px;
+}
+
+.contact-description p {
+    font-size: 20px;
+}
+
+.contact-title h2 {
+    color: #E30808;
+    font-family: 'Red Hat Display';
+    font-weight: 400;
+    margin-top: 50px;
+}
+
+.contact-content {
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-content form {
+    width: 50%;
+
+}
+
+.contact-content form .form-row {
+    display: flex;
+    margin-block: 40px;
+    gap: 30px;
+
+}
+
+.contact-content form .form-row>div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex-grow: 1;
+}
+
+.contact-content form .form-row>div.subject {
+    max-width: 50%;
+}
+
+.contact-content input {
+    padding: 10px;
+    border: 2px solid #E30808;
+    border-radius: 50px;
+}
+
+.contact-content textarea {
+    padding: 10px;
+    border: 2px solid #E30808;
+    border-radius: 10px;
+    width: 100%;
+    resize: none;
+}
+
+.contact-content .action-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+input[type=reset],
+input[type=submit] {
+    width: 200px;
+    font-family: 'Red Hat Display';
+    font-weight: 700;
+    cursor: pointer;
+}
+
+input[type=reset] {
+    background-color: white;
+    color: #555;
+
+}
+
+input[type=reset]:hover {
+    background-color: #E30808;
+    color: white;
+    transition: .3s;
+}
+
+input[type=submit] {
+    background-color: #E30808;
+    color: white;
+
+}
+
+.contact-content .vertical-line {
+    border: 1px solid #999;
+
+}
+
+.contact-links {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-links .contact-title {
+    font-size: 26px;
+}
+
+.contact-links .contact-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* MOBILE */
+@media (max-width:768px) {
+    .image_h1 img {
+        display: none;
+    }
+
+    .image_h1 {
+        padding: 20px 0;
+        display: flex;
+        text-align: center;
+    }
+
+    .image_h1 h1 {
+        margin: auto;
+    }
+
+    .contact-title {
+        text-align: center;
+    }
+
+    .contact-info form {
+        margin: auto;
+    }
+
+    .vertical-line {
+        display: none;
+    }
+
+    .contact-links {
+        display: none;
+    }
+
+    .footer-logo {
+        display: none;
+    }
+
+    .footer-menu {
+        display: none;
+    }
+
+    .footer-contact {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+/* MOBILE */
+@media (max-width:768px) {
+
+    .contact-description {
+        width: 80%;
+        line-height: 150%;
+        margin: auto;
+    }
+
+    .contact-info form {
+        width: 80%;
+    }
+
+    form .form-row {
+        flex-direction: column;
+    }
+
+    .contact-content form .form-row>div.subject {
+        max-width: 100%;
+    }
+
+    .p {
+      width: auto;
+    }
+
+}

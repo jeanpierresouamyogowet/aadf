@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="contact.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="header">
+    <div class="logo">
+      <a href="Home.html">
+        <img src="./assets/img/aadf_black.png" width="80" alt="" />
+      </a>
+    </div>
+    <div class="menu">
+      <ul>
+        <a href="">Qui sommes-nous</a>
+        <a href="">Actualités</a>
+        <a href="Activities.html">Activités</a>
+        <a href="">Nous soutenir</a>
+        <a href="contact.html" class="contact-btn">Contact</a>
+        <a href="" class="join-btn">Nous rejoindre</a>
+      </ul>
+    </div>
+
+    <div class="burger-menu" onclick="openNav()">
+      <img src="./assets/img/menu.png" width="30px" alt="" />
+    </div>
+  </div>
+  <div class="drawer-menu" id="drawer-menu">
+    <div class="drawer-close">
+      <span onclick="closeNav()">X</span>
+    </div>
+    <ul>
+      <a href="">Qui sommes-nous</a>
+      <a href="Activities.html">Activités</a>
+      <a href="">Activités</a>
+      <a href="">Nous soutenir</a>
+      <a href="contact.html" class="contact-btn">Contact</a>
+      <a href="" class="join-btn">Nous rejoindre</a>
+    </ul>
+  </div>
+
+
+
+    <!-- HERO -->
+    <div class="contact-page">
+        <div class="image_h1">
+            <h1 class="h1" id="h1">CONTACT</h1> 
+            <img src="./assets/img/img_h1.svg" alt="image_h1" class="image_h1">
+        </div>
+    
+
+        <!-- CONTENT -->
+        <div class="contact-container">
+            <section class="contact-description">
+                <p>Vous cherchez des renseignements ? De l’aide ? 
+                    Vous avez des remarques sur le site ? Sur un article ? 
+                    Vous souhaitez nous proposer un projet ? <br><br>
+                    N’hésitez pas à nous contacter, nous mettrons tout en oeuvre 
+                    pour vous répondre au plus vite.</p>
+            </section>
+
+            <div class="contact-info">
+                <div class="contact-title">
+                    <h2>Envoyez-nous un message !</h2>
+                </div>
+                <div class="contact-content">
+                
+                <form action="">
+                    <div class="form-row">
+                        <div class="full-name">
+                            <label for="name-input">Nom complét</label>
+                            <input type="text" id="name-input" placeholder="Nom complét">
+                        </div>
+                        <div class="email">
+                            <label for="email-input">Adresse email</label>
+                            <input type="text" id="email-input" placeholder="Adresse email ...">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="subject">
+                            <label for="subjet-input">Sujet</label>
+                            <input type="text" id="subject-input" placeholder="Sujet ...">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <textarea name="message" id="message-input" cols="30" rows="10" 
+                        placeholder="Ecrivez votre message ici ..."></textarea>
+                    </div>
+                    <div class="action-buttons">
+                        <input type="submit" value="Envoyer">
+                        <input type="reset" value="Annuler">
+                    </div>
+                </form>
+
+                <div class="vertical-line"></div>
+
+                <div class="contact-links">
+                    <div class="contact-title">Nous contacter</div>
+                    <div class="contact-row">
+                      <img src="./assets/img/ant-design_mail-filled.svg" alt="" /><span
+                        >AADF 7, rue de Castellane, 75008 Paris</span
+                      >
+                    </div>
+                    <div class="contact-row">
+                      <img
+                        src="./assets/img/ant-design_twitter-circle-filled.svg"
+                        alt=""
+                      /><span>Twitter @assoAADF</span>
+                    </div>
+                    <div class="contact-row">
+                      <img src="./assets/img/ion_at-circle.svg" alt="" /><span
+                        >assoAADF@gmail.com</span
+                      >
+                    </div>
+                    <div class="contact-row">
+                      <img src="./assets/img/carbon_phone-filled.svg" alt="" /><span
+                        >+33 1 xx xx xx xx</span
+                      >
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+        
+        
+
+        
+    
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-logo">
+          <img src="./assets/img/aadf_white.png" alt="" />
+        </div>
+        <div class="footer-menu">
+          <ul>
+            <li>Accueil</li>
+            <li>Qui sommes nous?</li>
+            <li>Actualités</li>
+            <li>Activités</li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <div class="contact-title">Nous contacter</div>
+          <div class="contact-row">
+            <img src="./assets/img/ant-design_mail-filled.svg" alt="" /><span
+              >AADF 7, rue de Castellane, 75008 Paris</span
+            >
+          </div>
+          <div class="contact-row">
+            <img
+              src="./assets/img/ant-design_twitter-circle-filled.svg"
+              alt=""
+            /><span>Twitter @assoAADF</span>
+          </div>
+          <div class="contact-row">
+            <img src="./assets/img/ion_at-circle.svg" alt="" /><span
+              >assoAADF@gmail.com</span
+            >
+          </div>
+          <div class="contact-row">
+            <img src="./assets/img/carbon_phone-filled.svg" alt="" /><span
+              >+33 1 xx xx xx xx</span
+            >
+          </div>
+        </div>
+      </footer>
+      <script src="./index.js"></script>
+</body>
+
+</html>

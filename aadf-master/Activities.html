@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="Activities.css" />
+    <title>Activités</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <div class="header">
+      <div class="logo">
+        <a href="Home.html">
+          <img src="./assets/img/aadf_black.png" width="80" alt="" />
+        </a>
+      </div>
+      <div class="menu">
+        <ul>
+          <a href="">Qui sommes-nous</a>
+          <a href="">Actualités</a>
+          <a href="Activities.html">Activités</a>
+          <a href="">Nous soutenir</a>
+          <a href="contact.html" class="contact-btn">Contact</a>
+          <a href="" class="join-btn">Nous rejoindre</a>
+        </ul>
+      </div>
+
+      <div class="burger-menu" onclick="openNav()">
+        <img src="./assets/img/menu.png" width="30px" alt="" />
+      </div>
+    </div>
+    <div class="drawer-menu" id="drawer-menu">
+      <div class="drawer-close">
+        <span onclick="closeNav()">X</span>
+      </div>
+      <ul>
+        <a href="">Qui sommes-nous</a>
+        <a href="">Actualités</a>
+        <a href="Activities.html">Activités</a>
+        <a href="">Nous soutenir</a>
+        <a href="contact.html" class="contact-btn">Contact</a>
+        <a href="" class="join-btn">Nous rejoindre</a>
+      </ul>
+    </div>
+
+    <!-- HERO -->
+    <div class="image_h1">
+      <h1 class="h1" id="h1">ACTIVITES</h1>
+      <img src="./assets/img/img_h1.svg" alt="image_h1" class="image_h1" />
+    </div>
+
+    <!-- CONTENT -->
+    <div class="home-container">
+      <section class="measure-camp">
+        <p>L’AADF encadre divers événements tout au long de l’année.</p>
+
+        <div class="measure-camp-content">
+          <img
+            src="./assets/img/activities/logo_measurecamp.svg"
+            alt="logo_measurecamp"
+          />
+          <div class="measure-camp-text">
+            <h2>
+              <a href="measureCamp.html" style="text-decoration: none"
+                >MeasureCamp</a
+              >
+            </h2>
+            <p>
+              Son activité principale est d’organiser <br />
+              MeasureCamp en France.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="activities-section">
+        <p>
+          En parallèle, l’association a pour vocation d’animer la communauté
+          <br />
+          Analytics en France au travers de différentes activités :
+        </p>
+
+        <div class="activities-images">
+          <div>
+            <img
+              src="./assets/img/activities/img_womeninanalytics.svg"
+              alt="WomenInAnalytics"
+            />
+            <h2>
+              <a href="" style="text-decoration: none">Women in Analytics</a>
+            </h2>
+            <p>
+              la promotion de l’analytics et de la data en général auprès des
+              femmes
+            </p>
+          </div>
+
+          <div>
+            <img
+              src="./assets/img/activities/img_caféanalytics.svg"
+              alt="WomenInAnalytics"
+            />
+            <h2>
+              <a href="" style="text-decoration: none">Café Analytics</a>
+            </h2>
+            <p>
+              la rencontre informelle des acteurs du digital autour d’un thème
+              prédéfini
+            </p>
+          </div>
+
+          <div>
+            <img
+              src="./assets/img/activities/img_enquêteemploi.svg"
+              alt="EnquêteEmploi"
+            />
+            <h2>
+              <a href="" style="text-decoration: none">Enquête Emploi</a>
+            </h2>
+            <p>l’état des lieux du métier de web analyste</p>
+          </div>
+
+          <div>
+            <img
+              src="./assets/img/activities/img_afterwork.svg"
+              alt="Afterwork"
+            />
+            <h2>
+              <a href="" style="text-decoration: none">Afterwork</a>
+            </h2>
+            <p>
+              l’animation et la rencontre de la communauté autour d’un verre
+            </p>
+          </div>
+
+          <div>
+            <img
+              src="./assets/img/activities/img_measurebowling.svg"
+              alt="MeasureBowling"
+            />
+            <h2>
+              <a href="" style="text-decoration: none">Measure Bowling</a>
+            </h2>
+            <p>le croisement improbable de l’analytics et du bowling.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-logo">
+        <img src="./assets/img/aadf_white.png" alt="" />
+      </div>
+      <div class="footer-menu">
+        <ul>
+          <li>Accueil</li>
+          <li>Qui sommes nous?</li>
+          <li>Actualités</li>
+          <li>Activités</li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <div class="contact-title">Nous contacter</div>
+        <div class="contact-row">
+          <img src="./assets/img/ant-design_mail-filled.svg" alt="" /><span
+            >AADF 7, rue de Castellane, 75008 Paris</span
+          >
+        </div>
+        <div class="contact-row">
+          <img
+            src="./assets/img/ant-design_twitter-circle-filled.svg"
+            alt=""
+          /><span>Twitter @assoAADF</span>
+        </div>
+        <div class="contact-row">
+          <img src="./assets/img/ion_at-circle.svg" alt="" /><span
+            >assoAADF@gmail.com</span
+          >
+        </div>
+        <div class="contact-row">
+          <img src="./assets/img/carbon_phone-filled.svg" alt="" /><span
+            >+33 1 xx xx xx xx</span
+          >
+        </div>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>

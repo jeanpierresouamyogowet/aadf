@@ -1,0 +1,419 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Red Hat Display", sans-serif
+}
+
+:root {
+  --primary-red: red;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.header * {
+  font-family: 'Roboto';
+}
+
+.header .burger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.header .menu ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+}
+
+.header .menu ul a {
+  text-decoration: none;
+  color: var(--primary-red);
+}
+
+.header .menu ul a::after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  background: #9b9999;
+  display: block;
+  margin: auto;
+  margin-top: 5px;
+  transition: 0.3s ease-in-out;
+}
+
+.header .menu ul a:hover::after {
+  width: 70%;
+}
+
+.drawer-menu {
+  width: 0px;
+  height: 100%;
+  background-color: white;
+  padding-block: 20px;
+  position: fixed;
+  z-index: 1;
+  overflow-x: hidden;
+  top: 0;
+  right: 0;
+  transition: 0.5s;
+  box-shadow: -3px 0px 5px -1px rgba(0, 0, 0, 0.5);
+}
+
+.drawer-menu .drawer-close {
+  display: flex;
+  justify-content: flex-end;
+  padding-inline: 20px;
+}
+
+.drawer-menu .drawer-close span {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: right;
+  padding: 0 10px;
+  box-sizing: border-box;
+  border: 1px solid #555;
+  border-radius: 50px;
+}
+
+.drawer-menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0;
+  align-items: center;
+}
+
+.drawer-menu ul a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+
+.drawer-menu ul a:hover {
+  color: red;
+}
+
+.contact-btn,
+.join-btn {
+  border: 1px solid red;
+  border-radius: 20px;
+  padding: 5px 20px;
+}
+
+.contact-btn::after,
+.join-btn::after {
+  display: none !important;
+}
+
+.join-btn {
+  background-color: red;
+  color: white !important;
+}
+
+.contact-btn:hover {
+  background-color: red;
+  color: white !important;
+  transition: .5s;
+}
+
+
+/* ------------------------------------------------ */
+
+.hero-area {
+  height: 391px;
+  max-width: 100%;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-text {
+  display: flex;
+  flex: wrap;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.hero-text h2 {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  color: white;
+  font-size: 55px;
+  margin-left: 20px;
+}
+
+.hero-area img {
+  width: 40%;
+}
+
+.body {
+  max-width: 960px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.body-title {
+  text-align: left;
+  font-size: 18px;
+}
+
+.body-title ol li {
+  line-height: 200%;
+}
+
+.red-span {
+  color: red;
+  font-weight: 800;
+}
+
+.underlined-text-container {
+  text-align: center;
+}
+
+.body-title h3 {
+  font-size: 34px;
+  font-weight: 400;
+  display: inline-block;
+  position: relative;
+  margin: auto;
+  text-align: center;
+}
+
+.underlined-text::after {
+  content: "";
+  height: 3px;
+  width: 80%;
+  background-color: red;
+  display: block;
+  margin: auto;
+  position: absolute;
+  margin-top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.body p {
+  font-size: 20px;
+  margin: 45px;
+  margin-left: 0;
+}
+
+.body h4 {
+  font-size: 24px;
+  color: rgb(238, 6, 6);
+}
+
+.body-member {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 30px
+}
+
+.member {
+  position: relative;
+  width: 30%;
+}
+
+.member h4 {
+  font-weight: 400;
+  text-align: center;
+}
+
+.member>div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.member p {
+  font-size: 18px;
+  margin: 5px;
+}
+
+.member img {
+  height: 150px;
+  width: 150px;
+  margin: auto;
+}
+
+.info-btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.info-btn {
+  border: 1px solid red;
+  margin-top: 50px;
+  margin: auto;
+  background-color: white;
+  padding: 10px 50px;
+  font-size: 18px;
+  border-radius: 20px;
+  color: red;
+  text-decoration: none;
+}
+
+.info-btn:hover {
+  background-color: red;
+  color: white !important;
+  transition: 0.5s;
+}
+
+
+footer {
+  height: 250px;
+  background-color: #004064;
+  margin-top: 100px;
+  display: flex;
+
+  align-items: center;
+  color: white;
+}
+
+.footer-logo {
+  width: 30%;
+  text-align: center;
+}
+
+.footer-logo img {
+  width: 200px;
+}
+
+.footer-menu {
+  flex-grow: 1;
+}
+
+.footer-menu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 18px;
+}
+
+.footer-menu ul li {
+  cursor: pointer;
+}
+
+.footer-menu ul li:hover {
+  color: red;
+  transition: .2s;
+}
+
+.footer-contact {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-contact .contact-title {
+  font-size: 26px;
+}
+
+.footer-contact .contact-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+
+/* TABLETTE */
+@media (max-width:1024px) {
+  .header .menu {
+    display: none;
+  }
+
+  .header .burger-menu {
+    display: block;
+  }
+
+  .hero-area h2 {
+    font-size: 40px;
+  }
+
+  .body {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+  }
+
+  .member {
+    width: 60%;
+    margin-block-end: 50px;
+  }
+
+  .footer-logo {
+    display: none;
+  }
+
+
+
+  /*  */
+}
+
+/* MOBILE */
+@media (max-width:425px) {
+  .hero-area img {
+    display: none;
+  }
+
+  .hero-area {
+    padding: 20px 0;
+    display: flex;
+    text-align: center;
+  }
+
+  .hero-area h2 {
+    margin: auto;
+  }
+
+  .about-us-section .block {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .footer-logo {
+    display: none;
+  }
+
+  .body-title p {
+    text-align: center;
+    margin: 0;
+    margin-top: 50px;
+  }
+
+
+
+  .member {
+    width: 90%;
+    margin-block-end: 50px;
+  }
+
+  .footer-menu {
+    display: none;
+  }
+
+  .footer-contact {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}

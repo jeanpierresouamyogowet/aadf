@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <div class="header">
+      <div class="logo">
+        <a href="Home.html">
+          <img src="./assets/img/aadf_black.png" width="80" alt="" />
+        </a>
+      </div>
+      <div class="menu">
+        <ul>
+          <a href="aboutus.html">Qui sommes-nous</a>
+          <a href="">Actualités</a>
+          <a href="Activities.html">Activités</a>
+          <a href="">Nous soutenir</a>
+          <a href="contact.html" class="contact-btn">Contact</a>
+          <a href="" class="join-btn">Nous rejoindre</a>
+        </ul>
+      </div>
+
+      <div class="burger-menu" onclick="openNav()">
+        <img src="./assets/img/menu.png" width="30px" alt="" />
+      </div>
+    </div>
+    <div class="drawer-menu" id="drawer-menu">
+      <div class="drawer-close">
+        <span onclick="closeNav()">X</span>
+      </div>
+      <ul>
+        <a href="">Qui sommes-nous</a>
+        <a href="">Actualités</a>
+        <a href="Activities.html">Activités</a>
+        <a href="">Nous soutenir</a>
+        <a href="contact.html" class="contact-btn">Contact</a>
+        <a href="" class="join-btn">Nous rejoindre</a>
+      </ul>
+    </div>
+
+    <!-- HERO AREA  -->
+    <div class="hero-area">
+      <h1>Association des Analystes Digitaux Francophones</h1>
+      <img src="./assets/img/homeVector.svg" alt="" />
+    </div>
+
+    <!-- CONTENT -->
+    <div class="home-container">
+      <section class="about-us-section">
+        <div class="title">
+          <h3 class="underlined-text">Qui sommes nous?</h3>
+        </div>
+        <div class="block block1">
+          <p>
+            L’AADF est une association de loi 1901 à but non lucratif, créée
+            dans le but de promouvoir l’activité de l’analyse digitale, dans
+            l’univers francophone.
+          </p>
+          <img src="./assets/img/team.png" width="300px" alt="" />
+        </div>
+        <div class="block block2">
+          <p>
+            L’association est ouverte à toutes les personnes qui s’intéressent à
+            l’analyse digitale : débutants ou confirmés, professionnels ou
+            amateurs, étudiants ou professeur, …
+          </p>
+          <img src="./assets/img/0.jpeg" width="300px" alt="" />
+        </div>
+      </section>
+      <section class="our-activities">
+        <div class="title">
+          <h3 class="underlined-text">Nos activités</h3>
+        </div>
+        <div class="activities-list">
+          <div>
+            <div class="activity-image">
+              <img src="./assets/img/cafe.jpeg" alt="" />
+            </div>
+            <p>l’organisation annuelle de MeasureCamp Paris</p>
+          </div>
+          <div>
+            <div class="activity-image">
+              <img src="./assets/img/team.png" alt="" />
+            </div>
+            <p>la promotion des MeasureBowling France</p>
+          </div>
+          <div>
+            <div class="activity-image">
+              <img src="./assets/img/women.jpeg" alt="" />
+            </div>
+            <p>l’organisation de Cafés Analytics</p>
+          </div>
+          <div>
+            <div class="activity-image">
+              <img src="./assets/img/news.jpg" alt="" />
+            </div>
+            <p>une étude approfondie sur les métiers de l’Analytics</p>
+          </div>
+          <div>
+            <div class="activity-image">
+              <img src="./assets/img/team.png" alt="" />
+            </div>
+            <p>la promotion du mouvement #WomenInAnalytics France</p>
+          </div>
+        </div>
+      </section>
+      <section class="recent-articles-section">
+        <div class="title">
+          <h3 class="underlined-text">Articles récents</h3>
+        </div>
+        <div class="articles-list">
+          <div>
+            <a href="webinar.html">
+              <div class="cover">
+                <img src="./assets/img/news.jpg" alt="" />
+                <div class="shadow-image">
+                  <div class="text-shadow-container">
+                    <img
+                      src="./assets//img/left_arrow.svg"
+                      class="left_arrow"
+                      alt=""
+                    />
+                    <span>Voir plus </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <div class="article-title">
+              <span>Webinar « La Data chez L’Équipe »</span>
+            </div>
+          </div>
+
+          <div>
+            <div class="cover">
+              <img src="./assets/img/news.jpg" alt="" />
+              <div class="shadow-image">
+                <div class="text-shadow-container">
+                  <img
+                    src="./assets//img/left_arrow.svg"
+                    class="left_arrow"
+                    alt=""
+                  />
+                  <span>Voir plus </span>
+                </div>
+              </div>
+            </div>
+            <div class="article-title">
+              <span
+                >Mardi 7 décembre 2021 a eu lieu l’Assemblée Générale annuelle
+                de l’AADF</span
+              >
+            </div>
+          </div>
+          <div>
+            <div class="cover">
+              <img src="./assets/img/news.jpg" alt="" />
+              <div class="shadow-image">
+                <div class="text-shadow-container">
+                  <img
+                    src="./assets//img/left_arrow.svg"
+                    class="left_arrow"
+                    alt=""
+                  />
+                  <span>Voir plus </span>
+                </div>
+              </div>
+            </div>
+            <div class="article-title">
+              <span>Afterwork Digital Analytics le 1er juillet 2021</span>
+            </div>
+          </div>
+        </div>
+        <button class="more-articles-btn">Plus d’articles</button>
+      </section>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-logo">
+        <img src="./assets/img/aadf_white.png" alt="" />
+      </div>
+      <div class="footer-menu">
+        <ul>
+          <li>Accueil</li>
+          <li>Qui sommes nous?</li>
+          <li>Actualités</li>
+          <li>Activités</li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <div class="contact-title">Nous contacter</div>
+        <div class="contact-row">
+          <img src="./assets/img/ant-design_mail-filled.svg" alt="" /><span
+            >AADF 7, rue de Castellane, 75008 Paris</span
+          >
+        </div>
+        <div class="contact-row">
+          <img
+            src="./assets/img/ant-design_twitter-circle-filled.svg"
+            alt=""
+          /><span>Twitter @assoAADF</span>
+        </div>
+        <div class="contact-row">
+          <img src="./assets/img/ion_at-circle.svg" alt="" /><span
+            >assoAADF@gmail.com</span
+          >
+        </div>
+        <div class="contact-row">
+          <img src="./assets/img/carbon_phone-filled.svg" alt="" /><span
+            >+33 1 xx xx xx xx</span
+          >
+        </div>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
